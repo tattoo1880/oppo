@@ -7,7 +7,6 @@ from selenium.webdriver.common.actions import interaction
 
 from selenium.webdriver.common.proxy import Proxy, ProxyType
 import time
-import math
 
 def start_app(driver, app_package, app_activity):
     driver.start_activity(app_package, app_activity)
@@ -112,4 +111,6 @@ if __name__ == '__main__':
         except Exception as e:
             print(e)
             continue
+        # 间隔23小时
+        time.sleep(82800)
 
